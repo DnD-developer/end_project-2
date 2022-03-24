@@ -236,7 +236,7 @@ label {
   color: #b59f5b;
 }
 
-.trends__item-links a.element-hover::after{
+.trends__item-links .element-hover::after{
   background-color: #b59f5b;
 }
 .trends__item-links li+li{
@@ -554,7 +554,19 @@ label {
 }
 
 .products__item {
+  position: relative;
   max-width: 300px;
+}
+
+.products__item::after {
+  content: '';
+  position: absolute;
+  top: 174px;
+  left: 50%;
+  min-height: 66%;
+  width: 116%;
+  border: 3px solid #b59f5b;
+  transform: translate(-50%);
 }
 
 .products__item-img {
@@ -563,9 +575,7 @@ label {
 }
 
 .products__info {
-  position: relative;
   margin-top: 16px;
-  margin-bottom: 18px;
 }
 
 .products__info-title {
@@ -596,6 +606,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 18px;
 }
 
 .products__wrapper-price {
