@@ -41,6 +41,9 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="burger-menu">
+                    <div class="burger-menu__line"></div>
+                </div>
             </div>
             <h1 class="header__wrapper-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
@@ -490,6 +493,46 @@
             </p>
         </div>
     </footer>
+
+    <div class="popup hidden">
+        <div class="popup-wrapper">
+            <div class="popup__title underline-title">
+                Ваш Фидбек
+            </div>
+            <form>
+                <label class="input-list">
+                    Как часто вы заходите на сайт?
+                    <select name="list-visit-site"required>
+                        <option value="often">Почти каждый день</option>
+                        <option value="rerely">Редко</option>
+                        <option value="never">Никогда</option>
+                    </select>
+                    <div class="select-visible">Почти каждый день</div>
+                </label>
+    
+                <div class="input-check">
+                    <h3 class="input-check__title">Вы подписаны на рассылку?</h3>
+                    <div class="radio-wrapper">
+                        <label class = "label-subscribe-yes">
+                            <input name="answer" type="radio" id="subscribe-yes" class="visually-hidden-input" required>
+                            Да
+                        </label>
+                        <label class = "label-subscribe-no">
+                            <input name="answer" type="radio"id="subscribe-no" class="visually-hidden-input"required>
+                            Нет
+                        </label>
+                    </div>
+                </div>
+    
+                <label class="input-textArea">
+                    Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+                    <textarea name="feedback-text" cols="30" rows="10" required placeholder="Может, больше рецептов?"></textarea>
+                </label>
+                <button class="btn-submit" type="submit">Отправить</button>
+            </form>
+            <div class="popup-close"></div>
+        </div>
+    </div>
 
 
 
